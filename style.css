@@ -1,0 +1,151 @@
+/* Boilerplate */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main {
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.navbar.logo img {
+  height: 60px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+  transition: transform .3s ease-in;
+}
+
+.nav-links a:not([class="active"]):hover  {
+  text-decoration: none;
+  color: #e0310b;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translateY(-4px);
+}
+
+.nav-links a.active {
+  color: #e0310b;
+}
+
+/* Hero Section */
+.hero-section {
+  margin-top: 100px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50% 50%;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  height: 40px;
+  padding: 12px 24px;
+  background-color: #e0310b;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0;
+  transition: transform .3s ease-in;
+}
+
+.btn:hover {
+  height: 40px;
+  padding: 12px 24px;
+  background-color: #ba000e;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0;
+  transform: translateY(-4px);
+}
+
+.btn-outline {
+  height: 40px;
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 2px solid #e0310b;
+  outline: none;
+  color: #e0310b;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0;
+  transition: transform 0.3s ease-in;
+}
+
+.btn-outline:hover {
+  line-height: 0;
+  height: 40px;
+  padding: 12px 24px;
+  background-color: #ba000e;
+  border: 2px solid #ba000e;
+  outline: none;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  transform: translateY(-4px);
+}
+@keyframes updown{
+  0%, 100%{
+    transform: translateY(0)
+  }
+  50%{
+    transform: translateY(20px)
+  }  
+}
+
+.hero-img img{
+  /* animation-name: updown;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; */
+
+  animation: updown 2s ease-in-out infinite;
+}
